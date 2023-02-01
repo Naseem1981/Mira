@@ -12,16 +12,62 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- Fontsawesome -->
+    <script
+      src="https://kit.fontawesome.com/57abb798e9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="row">
-      <div class="col-lg-4"></div>
-      <div id="header" class="col-lg-4">
-        <h1>Mira<img id="miraImg" src="./assets/Mira.svg" /></h1>
+    <section class="coloured-section" id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+
+        <nav class="navbar navbar-dark navbar-expand-lg">
+          <a class="navbar-brand" href="">Mira</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">Validate Your Business Ideas with Mira.</h1>
+            </div>
+          <div class="col-lg-6">
+            <img class="title-image" src="./assets/Mira.svg" alt="mira" />
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-4"></div>
-    <div><h2>Write Your Business Idea</h2></div>
+    </section>
+
+    <div class="col-4" ></div>
+    <div><h2 id="mirachat">Write Your Business Idea</h2></div>
+    <p>Are you looking to make a big splash with your startup? Mira helps you validate your business ideas and generate a comprehensive business plan to get you started.</p>
+                      
     <div class="row">
       <div class="col-lg-4"></div>
       <div id="app" class="col-lg-4">
@@ -35,5 +81,109 @@
 
       <div class="col-4"></div>
     </div>
+
+    <div class="feature-container-fluid">
+      <section class="white-section" id="features">
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <h3 class="feature-title">
+              <i class="icon fa-solid fa-circle-check fa-4x"></i><br />
+              Easy to use.
+            </h3>
+            
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <h3 class="feature-title">
+              <i class="icon fa-solid fa-bullseye fa-4x"></i><br />
+              Elite Clientele
+            </h3>
+            
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <h3 class="feature-title">
+              <i class="icon fa-solid fa-heart fa-4x"></i><br />
+              Guaranteed to work.
+            </h3>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="testimonials-container-fluid">
+      <section class="white-section" id="testimonials">
+        <div class="row">
+          <div class="testimonials-box col-lg-6">
+            <h3 class="testimonials-title">
+              <img src="assets/lady-img.png"></img><br />
+              Isabella Pickleton.
+            </h3>
+            <p>“Mira saved me time and gave me the assurance that my business idea was worth pursuing.”</p>
+          </div>
+
+
+          <div class="testimonials-box col-lg-6">
+            <h3 class="testimonials-title">
+              <img src="assets/man.png"></img><br />
+              Adam Tinkler.
+            </h3>
+            <p>"I was able to easily create a business plan with Mira and successfully launch my startup."</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="white-section" id="pricing">
+      <h2 class="section-heading">A Plan for Every Business</h2>
+      <p>Simple and affordable price plans for your business.</p>
+
+      <div class="row">
+        <div class="pricing-column col-lg-6 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Starter</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">Free</h2>
+              <p>Unlimited Business Validation</p>
+              <button type="button" class="btn btn-lg w-100 btn-outline-dark">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-column col-lg-6 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Entrepreneur</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="price-text">$49 / mo</h2>
+              <p>Unlimited Business Validation</p>
+              <p>Unlimited Business Plan Automation</p>
+              <p>Unlimited Marketing Automation</p>
+              <button type="button" class="btn btn-lg w-100 btn-dark">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+        <!-- Footer -->
+        <div class="container-fluid">
+          
+          <footer class="white-section" id="footer">
+            <i class="social-icon fa-brands fa-facebook"></i>
+            <i class="social-icon fa-brands fa-twitter"></i>
+            <i class="social-icon fa-brands fa-instagram"></i>
+            <i class="social-icon fa-solid fa-envelope"></i>
+            <p>© Copyright Mira</p>
+          </footer>
+        </div>
   </body>
 </html>
