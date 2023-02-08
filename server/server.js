@@ -27,9 +27,9 @@ app.post("/", async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `I am going to ask you to let me know is my business idea will work but Before you answer do market research, competitor analysis, industry trends, potential revenue analysis on the following business: ${prompt}. There after Can you write a comprehensive validation and provide some ideas to make it successful and Does this business idea have the potential for success`,
+      prompt: `I am going to ask you to let me know if my business idea will work, but Before you answer do following : 1) market research 2) competitor analysis 3) industry trends 4) potential revenue analysis on the following business: ${prompt}.Only once you have done everything else then write a comprehensive validation and provide some ideas in bullet points to make it successful. finally let me know if this business idea has the potential for success`,
       temperature: 0.7, // Higher values means the model will take more risks.
-      max_tokens: 1024, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
+      max_tokens: 2048, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
       top_p: 1, // alternative to sampling with temperature, called nucleus sampling
       frequency_penalty: 0, // Number between -2.0 and 2.0. Positive values penalize new tokens based on their existing frequency in the text so far, decreasing the model's likelihood to repeat the same line verbatim.
       presence_penalty: 0, // Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood to talk about new topics.
