@@ -27,7 +27,7 @@ app.post("/", async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `${prompt} can you conduct market research, competitor analysis, industry trends, potential revenue analysis, Can you write a comprehensive validation and provide some ideas to make it successfull`,
+      prompt: `I am going to ask you to let me know is my business idea will work but Before you answer do market research, competitor analysis, industry trends, potential revenue analysis on the following business: ${prompt}. There after Can you write a comprehensive validation and provide some ideas to make it successful and Does this business idea have the potential for success`,
       temperature: 0.7, // Higher values means the model will take more risks.
       max_tokens: 2048, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
       top_p: 1, // alternative to sampling with temperature, called nucleus sampling
